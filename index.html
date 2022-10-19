@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tohru</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <form class="form" method="post" action="#">
+        <div class="form-step form-step-active">
+            <h1 class="text-center">Selecione a raça</h1>
+            <div class="input-group">
+                <div class="radio">
+                    <input type="radio" class="radio-btn" id="Holsteins" name="breeds" value="Holsteins">
+                    <label for="Holsteins">Holsteins</label>
+
+                    <input type="radio" class="radio-btn" id="Jerseys" name="breeds" value="Jerseys">
+                    <label for="Jerseys">Jerseys</label>
+
+                    <input type="radio" class="radio-btn" id="Brown-swiss" name="breeds" value="Brown-swiss">
+                    <label for="Brown-swiss">Brown swiss</label>
+
+                    <input type="radio" class="radio-btn" id="Airshire" name="breeds" value="Airshire">
+                    <label for="Airshire">Airshire</label>
+
+                    <input type="radio" class="radio-btn" id="Guernsey" name="breeds" value="Guernsey">
+                    <label for="Guernsey">Guernsey</label>
+
+                    <input type="radio" class="radio-btn" id="Milking-shorthorn" name="breeds"
+                        value="Milking-shorthorn">
+                    <label for="Milking-shorthorn">Milking shorthorn</label>
+
+                    <input type="radio" class="radio-btn" id="Red-and-white" name="breeds" value="Red-and-white">
+                    <label for="Red-and-white">Red and white</label>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn btn-next width-50 ml-auto"><i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h1 class="text-center">Selecione as características</h1>
+            <div class="details-options">
+                <p>PTI</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Net Merit Dollars</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA Milk lbs.</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA Protein lbs.</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA % Protein</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Under Compositive</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Feet & Leg Compositive</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Calvin Ease</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Fluid Net Merit Dollars</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>Cheese Net Merit Dollars</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA Fat lbs.</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA % Fat</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA Type</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA SCS</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+                <p>PTA PL</p>
+                <select name="operators" class="operators">
+                    <option value="iqual">=</option>
+                    <option value="bigger">></option>
+                    <option value="biggerIqual">>=</option>
+                    <option value="smaller">&lt</option>
+                    <option value="smallerIqual">&lt=</option>
+                </select>
+                <input type="number" name="campo3" placeholder="-">
+            </div>
+
+            <!-- <div class="input-group">
+                <input type="text" name="name" placeholder="Insira o nome do animal...">
+            </div>
+            <div class="input-group">
+                <input type="text" name="campo2" placeholder="Campo 2.">
+            </div> -->
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev"><i class="fa fa-arrow-left"></i></a>
+                <a href="#" class="btn btn-next"><i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="form-step">
+            <h1 class="text-center">Excluir da busca</h1>
+            <p>Digite o nome de um toro para buscar toros que não possuam genealogia dele.</p>
+            <div class="input-group">
+                <input type="text" name="campo3" placeholder="Ex.: GUIMO JOEL ET">
+            </div>
+            <div class="input-group">
+                <input type="text" name="campo4" placeholder="Ex.: RIVER VALLEY CECE CHROME ET">
+            </div>
+            <div class="btns-group">
+                <a href="#" class="btn btn-prev"><i class="fa fa-arrow-left"></i></a>
+                <a href="#" class="btn btn-next"><i class="fa fa-search"></i></a>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
