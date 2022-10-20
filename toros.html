@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tohru</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <table class='bulls-table'>
+        <tr>
+            <th>Nome</th>
+            <th>PTI</th>
+            <th>Net Merit Dollars</th>
+            <th>PTA Milk lbs.</th>
+            <th>PTA Protein lbs.</th>
+            <th>PTA % Protein</th>
+            <th>Under Compositive</th>
+            <th>Feet & Leg Compositive</th>
+            <th>Calvin Ease</th>
+            <th>Fluid Net Merit Dollars</th>
+            <th>Cheese Net Merit Dollars</th>
+            <th>PTA Fat lbs.</th>
+            <th>PTA % Fat</th>
+            <th>PTA Type</th>
+            <th>PTA SCS</th>
+            <th>PTA PL</th>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+
+    // let numLinhas = 10;
+    // let numColunas = 16;
+    // let string = "";
+
+    // for (var linhas = 1; linhas <= numLinhas; linhas++) {
+    //     string += "<tr>";
+
+    //     for (var colunas = 1; colunas <= numColunas; colunas++) {
+    //         string = string + "<td>" + colunas + "</td>";
+    //     }
+
+    //     string += "</tr>";
+    // }
+
+    async function getBulls() {
+        try {
+            const response = await fetch('http://localhost:3333/');
+            const data = await response.json();
+
+            bullsTable(data);
+        } catch (error) {
+            console.error(error)
+        }
+    }
+
+    function bullsTable(bulls) {
+        let output = ''
+
+        for (let bull of bulls) {
+            output += `<tr>`
+            for (let data of bull) {
+                output += `<td>${data}</td>`
+            }
+            output += `</tr>`
+        }
+
+        document.querySelector('table').innerHTML = output;
+    }
+</script>
+
+</html>
